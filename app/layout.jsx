@@ -3,6 +3,13 @@ import './globals.css'
 export const metadata = {
   title: 'Tom Torrance Heating & Cooling',
   description: 'Your trusted local HVAC experts in Erie County with nearly 40 years of experience. Family & veteran owned company providing heating, AC, ductwork, and water heater services.',
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: '32x32' },
+    ],
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: 'Tom Torrance Heating & Cooling',
     description: 'Your trusted local HVAC experts in Erie County with nearly 40 years of experience. Family & veteran owned company providing heating, AC, ductwork, and water heater services.',

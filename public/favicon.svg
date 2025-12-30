@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565C0"/>
+      <stop offset="100%" style="stop-color:#0D47A1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect width="32" height="32" rx="6" fill="url(#bgGradient)"/>
+  
+  <!-- First T - Red -->
+  <g fill="#C62828">
+    <!-- Top bar -->
+    <rect x="3" y="6" width="12" height="3" rx="1"/>
+    <!-- Vertical bar -->
+    <rect x="7" y="6" width="4" height="20" rx="1"/>
+  </g>
+  
+  <!-- Second T - White -->
+  <g fill="#FFFFFF">
+    <!-- Top bar -->
+    <rect x="17" y="6" width="12" height="3" rx="1"/>
+    <!-- Vertical bar -->
+    <rect x="21" y="6" width="4" height="20" rx="1"/>
+  </g>
+</svg>
