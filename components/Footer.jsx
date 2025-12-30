@@ -64,9 +64,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-
-              </li>
-              <li>
                 <Link href="/service-areas" className="text-white hover:text-accentRed transition-colors">
                   Service Areas
                 </Link>
@@ -136,26 +133,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      
-      {/* Voice Widget Placeholder */}
-      <div className="bg-darkGray py-4">
-        <div className="container mx-auto px-4 text-center">
-          <div className="text-sm text-gray-400">
-            {/* TODO: Voicemail Widget */}
-            <VoiceWidget number="8148257066" provider="GoogleVoice" />
-          </div>
-        </div>
-      </div>
     </footer>
-  )
-}
-
-// Placeholder Voice Widget Component
-function VoiceWidget({ number, provider }) {
-  return (
-    <div className="inline-flex items-center space-x-2 text-gray-400">
-      <Phone className="w-4 h-4" />
-      <span>Voicemail Widget - {provider}: {number}</span>
-    </div>
   )
 } 

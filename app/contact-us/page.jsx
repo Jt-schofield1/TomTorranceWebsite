@@ -1,7 +1,6 @@
 import ContactForm from '../../components/ContactForm'
-import GoogleMap from '../../components/GoogleMap'
-import { testimonials, siteConfig } from '../../lib/content'
-import { Phone, MapPin, Clock, Mail } from 'lucide-react'
+import { testimonials, siteConfig, businessHours } from '../../lib/content'
+import { Phone, MapPin, Clock } from 'lucide-react'
 
 export const metadata = {
   title: 'Contact Us - Tom Torrance Heating & Cooling',
@@ -102,10 +101,9 @@ export default function ContactUsPage() {
                     Service Hours
                   </h3>
                   <div className="text-darkGray">
-                    <p>Monday - Friday: 7:00 AM - 6:00 PM</p>
-                    <p>Saturday: 8:00 AM - 4:00 PM</p>
-                    <p>Sunday: Emergency Service Only</p>
-                    <p className="font-medium text-accentRed mt-1">24/7 Emergency Service Available</p>
+                    <p><span className="font-medium">Mon - Fri:</span> {businessHours.weekdays}</p>
+                    <p><span className="font-medium">Saturday:</span> {businessHours.saturday}</p>
+                    <p><span className="font-medium">Sunday:</span> {businessHours.sunday}</p>
                   </div>
                 </div>
               </div>
@@ -125,23 +123,34 @@ export default function ContactUsPage() {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Location Section */}
       <section className="bg-lightGray py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-montserrat font-bold text-center mb-8 text-darkGray">
-            Find Us on the Map
-          </h2>
-          
-          {/* Interactive Google Map */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-4xl mx-auto">
-            <div className="aspect-video">
-              <GoogleMap />
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-white rounded-lg shadow-lg p-8">
+              <div className="w-20 h-20 bg-accentRed rounded-full flex items-center justify-center mx-auto mb-6">
+                <MapPin className="w-10 h-10 text-white" />
+              </div>
+              <h2 className="text-3xl font-montserrat font-bold mb-4 text-darkGray">
+                Based in Waterford, PA
+              </h2>
+              <p className="text-lg text-darkGray mb-6">
+                Proudly serving Erie County and surrounding areas from our Waterford location.
+              </p>
+              <address className="text-darkGray not-italic text-lg mb-6">
+                <strong>{siteConfig.address.street}</strong><br />
+                {siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}
+              </address>
+              <a 
+                href={`https://maps.google.com/?q=${siteConfig.address.street},+${siteConfig.address.city},+${siteConfig.address.state}+${siteConfig.address.zip}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Get Directions
+              </a>
             </div>
           </div>
-          
-          <p className="text-center text-darkGray mt-4 max-w-2xl mx-auto">
-            We proudly serve Erie County and surrounding areas. Contact us to confirm service availability in your specific location.
-          </p>
         </div>
       </section>
 
