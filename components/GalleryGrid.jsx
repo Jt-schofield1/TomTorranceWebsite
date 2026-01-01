@@ -8,38 +8,32 @@ const galleryImages = [
   {
     id: 1,
     src: '/tempstar-furnace.png',
-    alt: 'Tempstar High-Efficiency Gas Furnace',
-    wide: false
+    alt: 'Tempstar High-Efficiency Gas Furnace'
   },
   {
     id: 2,
-    src: '/OIP.jpg',
-    alt: 'Furnace Maintenance Service',
-    wide: false
+    src: '/tempstar-ac-unit.png',
+    alt: 'Tempstar SmartComfort Air Conditioner Unit'
   },
   {
     id: 3,
-    src: '/tempstar-products.png',
-    alt: 'Tempstar Heating and Cooling Products Lineup',
-    wide: true // This is a wide panoramic image
+    src: '/OIP.jpg',
+    alt: 'Furnace Maintenance Service'
   },
   {
     id: 4,
-    src: '/tempstar-ac-unit.png',
-    alt: 'Tempstar SmartComfort Air Conditioner Unit',
-    wide: false
+    src: '/tempstar-products.png',
+    alt: 'Tempstar Heating and Cooling Products Lineup'
   },
   {
     id: 5,
     src: '/truck.jpeg',
-    alt: 'Tom Torrance Service Truck',
-    wide: false
+    alt: 'Tom Torrance Service Truck'
   },
   {
     id: 6,
     src: '/maint.png',
-    alt: 'HVAC Equipment',
-    wide: false
+    alt: 'HVAC Equipment'
   }
 ]
 
@@ -72,28 +66,20 @@ export function GalleryGrid() {
   const [selectedImage, setSelectedImage] = useState(null)
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
       {galleryImages.map((image) => (
         <div
           key={image.id}
-          className={`relative cursor-pointer group overflow-hidden rounded-lg ${
-            image.id === 5 ? 'bg-gray-100' : ''
-          } ${
-            image.wide 
-              ? 'col-span-2 aspect-[2/1] md:col-span-2 md:aspect-[3/1]' 
-              : 'aspect-square'
-          }`}
+          className="relative cursor-pointer group overflow-hidden rounded-lg aspect-square bg-gray-50"
           onClick={() => setSelectedImage(image)}
         >
           <Image
             src={image.src}
             alt={image.alt}
             fill
-            className={`transition-transform duration-300 group-hover:scale-105 ${
-              image.id === 5 || image.wide ? 'object-contain' : 'object-cover'
-            }`}
+            className="transition-transform duration-300 group-hover:scale-105 object-contain p-2"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />
+          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300" />
         </div>
       ))}
       
