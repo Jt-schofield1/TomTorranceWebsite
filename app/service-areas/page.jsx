@@ -97,7 +97,7 @@ export default function ServiceAreasPage() {
                   Fast Response Times
                 </h3>
                 <p className="text-darkGray">
-                  Being locally based means we can reach you quickly when you need emergency 
+                  Being locally based means we can reach you quickly when you need 
                   service. No waiting for technicians from distant locations.
                 </p>
               </div>
@@ -145,7 +145,7 @@ export default function ServiceAreasPage() {
                 Ready to Schedule Service?
               </h2>
               <p className="text-lg text-darkGray mb-6 leading-relaxed">
-                Whether you need routine maintenance, emergency repairs, or a complete system 
+                Whether you need routine maintenance, repairs, or a complete system 
                 replacement, Tom Torrance Heating & Cooling is here to help. Contact us today 
                 to schedule your service.
               </p>
@@ -195,18 +195,17 @@ export default function ServiceAreasPage() {
         </div>
       </section>
 
-      {/* Emergency Service Banner */}
+      {/* Call to Action Banner */}
       <section className="section-padding bg-accentRed text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-4">
-            24/7 Emergency Service Available
+            Ready to Get Started?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            HVAC emergencies don't wait for business hours. That's why we provide round-the-clock 
-            emergency service throughout our entire service area.
+            Contact us today for reliable HVAC services throughout Erie County and surrounding areas.
           </p>
           <a href={`tel:${siteConfig.phone}`} className="btn-primary bg-white text-accentRed hover:bg-lightGray text-lg px-8 py-4">
-            Call Emergency Line: {siteConfig.phone}
+            Call Us: {siteConfig.phone}
           </a>
         </div>
       </section>

@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Water Heater Repair | Tom Torrance Heating & Cooling',
-  description: 'Fast water heater repair services in Erie County, PA. Emergency repairs, diagnostics, and same-day service to restore hot water quickly.',
+  description: 'Fast water heater repair services in Erie County, PA. Professional diagnostics and same-day service to restore hot water quickly.',
   openGraph: {
     title: 'Water Heater Repair | Tom Torrance Heating & Cooling',
-    description: 'Fast water heater repair services in Erie County, PA. Emergency repairs, diagnostics, and same-day service to restore hot water quickly.',
+    description: 'Fast water heater repair services in Erie County, PA. Professional diagnostics and same-day service to restore hot water quickly.',
     type: 'website',
   },
 }
@@ -36,7 +36,7 @@ export default function WaterHeaterRepairPage() {
                 className="bg-tomRed hover:bg-accentRed text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Emergency Repair: (814) 885-2440
+                Call for Repair: (814) 885-2440
               </a>
               <Link 
                 href="/contact-us"
@@ -133,18 +133,18 @@ export default function WaterHeaterRepairPage() {
         </div>
       </section>
 
-      {/* Emergency Service */}
+      {/* When to Call */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              When to Call for Emergency Service
+              When to Call for Service
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-red-50 p-8 rounded-lg border-l-4 border-tomRed">
-              <h3 className="text-xl font-bold text-gray-900 mb-4 text-red-700">🚨 Call Immediately If:</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-red-700">🚨 Call Right Away If:</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Gas smell near water heater</li>
                 <li>• Active water leaking causing flooding</li>
@@ -168,21 +168,21 @@ export default function WaterHeaterRepairPage() {
         </div>
       </section>
 
-      {/* Emergency CTA */}
+      {/* Service CTA */}
       <section className="bg-tomRed py-12">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Water Heater Emergency? We're Here 24/7!
+            Water Heater Not Working? We Can Help!
           </h2>
           <p className="text-xl text-red-100 mb-6">
-            Don't go without hot water - call for immediate repair service
+            Don't go without hot water - call for professional repair service
           </p>
           <a 
             href={`tel:${siteConfig.phone}`}
             className="bg-white text-tomRed hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center"
           >
             <Phone className="mr-2 h-5 w-5" />
-            Emergency Repair: (814) 885-2440
+            Call for Repair: (814) 885-2440
           </a>
         </div>
       </section>

@@ -5,10 +5,10 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Air Conditioning Installation & Repair | Tom Torrance Heating & Cooling',
-  description: 'Expert AC installation, repair, and maintenance services in Erie County, PA. Energy-efficient systems, emergency repairs, and preventive maintenance.',
+  description: 'Expert AC installation, repair, and maintenance services in Erie County, PA. Energy-efficient systems and preventive maintenance.',
   openGraph: {
     title: 'Air Conditioning Installation & Repair | Tom Torrance Heating & Cooling',
-    description: 'Expert AC installation, repair, and maintenance services in Erie County, PA. Energy-efficient systems, emergency repairs, and preventive maintenance.',
+    description: 'Expert AC installation, repair, and maintenance services in Erie County, PA. Energy-efficient systems and preventive maintenance.',
     type: 'website',
   },
 }
@@ -103,7 +103,7 @@ export default function AirConditioningPage() {
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Our certified technicians work with top-quality air conditioning units from leading manufacturers. 
-                Whether you need a new installation, routine maintenance, or emergency repair, we ensure your 
+                Whether you need a new installation, routine maintenance, or repair, we ensure your 
                 system operates at peak efficiency.
               </p>
               <div className="space-y-3">
@@ -117,7 +117,7 @@ export default function AirConditioningPage() {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-tomRed mr-3" />
-                  <span className="text-gray-700">Emergency repair services available</span>
+                  <span className="text-gray-700">Reliable repair services</span>
                 </div>
               </div>
             </div>
@@ -180,21 +180,21 @@ export default function AirConditioningPage() {
         </div>
       </section>
 
-      {/* Emergency Service */}
+      {/* Service CTA */}
       <section className="bg-tomRed py-12">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             AC Not Working? We're Here to Help!
           </h2>
           <p className="text-xl text-red-100 mb-6">
-            Emergency air conditioning repair services available 24/7 throughout Erie County
+            Professional air conditioning repair services throughout Erie County
           </p>
           <a 
             href={`tel:${siteConfig.phone}`}
             className="bg-white text-tomRed hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center"
           >
             <Phone className="mr-2 h-5 w-5" />
-            Emergency Service: (814) 885-2440
+            Call Us: {siteConfig.phone}
           </a>
         </div>
       </section>
@@ -218,7 +218,7 @@ export default function AirConditioningPage() {
               <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-tomRed transition-colors">
                 Ductwork Services
               </h3>
-              <p className="text-gray-600">Duct installation, repair, cleaning, and optimization</p>
+              <p className="text-gray-600">Duct installation, repair, and optimization</p>
             </Link>
             <Link href="/hvac-services/air-purification" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow group">
               <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-tomRed transition-colors">

@@ -36,13 +36,8 @@ export default function HomePage() {
     },
     {
       title: 'Furnace Repair',
-      description: 'Emergency furnace repair services to keep you warm all winter long.',
+      description: 'Professional furnace repair services to keep you warm all winter long.',
       href: '/hvac-services/furnace-installation-repair'
-    },
-    {
-      title: 'Duct Cleaning',
-      description: 'Professional duct cleaning services to improve your indoor air quality.',
-      href: '/hvac-services/ductwork'
     },
     {
       title: 'Water Heaters',
@@ -394,7 +389,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center">
                   <div className="w-2 h-2 bg-accentRed rounded-full mr-3"></div>
-                  <span className="text-darkGray">24/7 emergency repair services</span>
+                  <span className="text-darkGray">Professional repair services</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-2 h-2 bg-accentRed rounded-full mr-3"></div>

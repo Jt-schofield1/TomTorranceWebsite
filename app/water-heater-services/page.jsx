@@ -63,7 +63,7 @@ export default function WaterHeaterServicesPage() {
               Complete Water Heater Solutions
             </h2>
             <p className="text-lg text-gray-600">
-              From emergency repairs to new installations, we provide reliable water heater 
+              From repairs to new installations, we provide reliable water heater 
               services to ensure you never run out of hot water.
             </p>
           </div>
@@ -111,14 +111,14 @@ export default function WaterHeaterServicesPage() {
         </div>
       </section>
 
-      {/* Emergency Service CTA */}
+      {/* Service CTA */}
       <section className="bg-tomRed py-12">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             No Hot Water? We Can Help!
           </h2>
           <p className="text-xl text-red-100 mb-6">
-            Emergency water heater repair services available throughout Erie County, PA
+            Professional water heater repair services available throughout Erie County, PA
           </p>
           <a 
             href={`tel:${siteConfig.phone}`}

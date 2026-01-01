@@ -64,7 +64,7 @@ export default function HVACServicesPage() {
               Complete HVAC Solutions
             </h2>
             <p className="text-lg text-gray-600">
-              From installation to emergency repairs, we provide comprehensive HVAC services 
+              From installation to repairs, we provide comprehensive HVAC services 
               to keep your home comfortable throughout the year.
             </p>
           </div>
@@ -112,14 +112,14 @@ export default function HVACServicesPage() {
         </div>
       </section>
 
-      {/* Emergency Service CTA */}
+      {/* Service CTA */}
       <section className="bg-tomRed py-12">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Need Emergency HVAC Service?
+            Ready to Schedule HVAC Service?
           </h2>
           <p className="text-xl text-red-100 mb-6">
-            We provide 24/7 emergency HVAC repairs throughout Erie County, PA
+            We provide reliable HVAC services throughout Erie County, PA
           </p>
           <a 
             href={`tel:${siteConfig.phone}`}
@@ -147,10 +147,10 @@ export default function HVACServicesPage() {
               </div>
               <div className="text-center">
                 <div className="bg-tomRed/10 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-tomRed">24/7</span>
+                  <span className="text-2xl font-bold text-tomRed">★</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Emergency Service</h3>
-                <p className="text-gray-600">Available when you need us most</p>
+                <h3 className="text-xl font-semibold mb-2">Family Owned</h3>
+                <p className="text-gray-600">Veteran owned local business</p>
               </div>
               <div className="text-center">
                 <div className="bg-tomRed/10 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">

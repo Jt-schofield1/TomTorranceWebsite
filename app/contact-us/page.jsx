@@ -63,7 +63,7 @@ export default function ContactUsPage() {
                   >
                     {siteConfig.phone}
                   </a>
-                  <p className="text-darkGray mt-1">Available 24/7 for emergencies</p>
+                  <p className="text-darkGray mt-1">We're here to help with your HVAC needs</p>
                 </div>
               </div>
 
@@ -192,23 +192,20 @@ export default function ContactUsPage() {
         </div>
       </section>
 
-      {/* Emergency Service Banner */}
+      {/* Call to Action Banner */}
       <section className="section-padding bg-accentRed text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-4">
-            Need Emergency HVAC Service?
+            Ready to Get Started?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Don't wait when your comfort is on the line. We provide 24/7 emergency service for urgent HVAC and water heater issues.
+            Contact us today for reliable HVAC and water heater services. We're here to help with all your comfort needs.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a href={`tel:${siteConfig.phone}`} className="btn-primary bg-white text-accentRed hover:bg-lightGray text-lg px-8 py-4">
-              Call Emergency Line: {siteConfig.phone}
+              Call Us: {siteConfig.phone}
             </a>
           </div>
-          <p className="text-sm mt-4 opacity-90">
-            Available 24 hours a day, 7 days a week for your emergency needs
-          </p>
         </div>
       </section>
     </div>

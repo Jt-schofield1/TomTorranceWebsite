@@ -123,9 +123,9 @@ export default function AboutUsPage() {
               
               <div className="text-center">
                 <div className="text-4xl font-montserrat font-bold text-accentRed mb-2">
-                  24/7
+                  5★
                 </div>
-                <p className="text-lg text-darkGray">Emergency Service</p>
+                <p className="text-lg text-darkGray">Customer Rating</p>
               </div>
             </div>
 

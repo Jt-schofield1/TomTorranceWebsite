@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Furnace Installation & Repair | Tom Torrance Heating & Cooling',
-  description: 'Professional furnace installation and repair services in Erie County, PA. High-efficiency heating systems, emergency repairs, and maintenance.',
+  description: 'Professional furnace installation and repair services in Erie County, PA. High-efficiency heating systems and maintenance.',
   openGraph: {
     title: 'Furnace Installation & Repair | Tom Torrance Heating & Cooling',
-    description: 'Professional furnace installation and repair services in Erie County, PA. High-efficiency heating systems, emergency repairs, and maintenance.',
+    description: 'Professional furnace installation and repair services in Erie County, PA. High-efficiency heating systems and maintenance.',
     type: 'website',
   },
 }
@@ -101,17 +101,17 @@ export default function FurnaceInstallationRepairPage() {
             </h2>
             <p className="text-lg text-gray-600">
               Pennsylvania winters can be harsh. Make sure your furnace is ready with our 
-              comprehensive heating services and emergency repair availability.
+              comprehensive heating services and reliable repair availability.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="bg-tomRed/10 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-tomRed">24/7</span>
+                <span className="text-2xl font-bold text-tomRed">40+</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Emergency Service</h3>
-              <p className="text-gray-600">Available when your heat goes out unexpectedly</p>
+              <h3 className="text-lg font-semibold mb-2">Years Experience</h3>
+              <p className="text-gray-600">Trusted expertise when you need it most</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="bg-tomRed/10 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
@@ -131,21 +131,21 @@ export default function FurnaceInstallationRepairPage() {
         </div>
       </section>
 
-      {/* Emergency Service */}
+      {/* Service CTA */}
       <section className="bg-tomRed py-12">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Furnace Emergency? We're Available 24/7!
+            Furnace Not Working? We're Here to Help!
           </h2>
           <p className="text-xl text-red-100 mb-6">
-            Don't freeze when your furnace breaks down. Call for immediate emergency service.
+            Don't wait when your furnace breaks down. Call for professional service.
           </p>
           <a 
             href="tel:814-885-2440"
             className="bg-white text-tomRed hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center"
           >
             <Phone className="mr-2 h-5 w-5" />
-            Emergency Service: (814) 885-2440
+            Call Us: (814) 885-2440
           </a>
         </div>
       </section>
@@ -169,7 +169,7 @@ export default function FurnaceInstallationRepairPage() {
               <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-tomRed transition-colors">
                 Ductwork Services
               </h3>
-              <p className="text-gray-600">Duct installation, repair, cleaning, and optimization</p>
+              <p className="text-gray-600">Duct installation, repair, and optimization</p>
             </Link>
             <Link href="/hvac-services/air-purification" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow group">
               <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-tomRed transition-colors">
