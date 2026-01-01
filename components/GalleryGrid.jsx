@@ -7,8 +7,8 @@ import { X } from 'lucide-react'
 const galleryImages = [
   {
     id: 1,
-    src: '/furnace-replacement-image.jpg',
-    alt: 'HVAC Installation Work'
+    src: '/tempstar-furnace.png',
+    alt: 'Tempstar High-Efficiency Gas Furnace'
   },
   {
     id: 2,
@@ -17,18 +17,18 @@ const galleryImages = [
   },
   {
     id: 3,
-    src: '/gallery-3.jpg',
-    alt: 'AC Unit Installation'
+    src: '/tempstar-products.png',
+    alt: 'Tempstar Heating and Cooling Products Lineup'
   },
   {
     id: 4,
-    src: '/uqWVFB.jpg',
-    alt: 'Ductwork Installation'
+    src: '/tempstar-ac-unit.png',
+    alt: 'Tempstar SmartComfort Air Conditioner Unit'
   },
   {
     id: 5,
     src: '/truck.jpeg',
-    alt: 'Water Heater Service'
+    alt: 'Tom Torrance Service Truck'
   },
   {
     id: 6,
