@@ -8,32 +8,38 @@ const galleryImages = [
   {
     id: 1,
     src: '/tempstar-furnace.png',
-    alt: 'Tempstar High-Efficiency Gas Furnace'
+    alt: 'Tempstar High-Efficiency Gas Furnace',
+    wide: false
   },
   {
     id: 2,
     src: '/OIP.jpg',
-    alt: 'Furnace Maintenance Service'
+    alt: 'Furnace Maintenance Service',
+    wide: false
   },
   {
     id: 3,
     src: '/tempstar-products.png',
-    alt: 'Tempstar Heating and Cooling Products Lineup'
+    alt: 'Tempstar Heating and Cooling Products Lineup',
+    wide: true // This is a wide panoramic image
   },
   {
     id: 4,
     src: '/tempstar-ac-unit.png',
-    alt: 'Tempstar SmartComfort Air Conditioner Unit'
+    alt: 'Tempstar SmartComfort Air Conditioner Unit',
+    wide: false
   },
   {
     id: 5,
     src: '/truck.jpeg',
-    alt: 'Tom Torrance Service Truck'
+    alt: 'Tom Torrance Service Truck',
+    wide: false
   },
   {
     id: 6,
     src: '/maint.png',
-    alt: 'HVAC Equipment'
+    alt: 'HVAC Equipment',
+    wide: false
   }
 ]
 
@@ -66,12 +72,16 @@ export function GalleryGrid() {
   const [selectedImage, setSelectedImage] = useState(null)
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
       {galleryImages.map((image) => (
         <div
           key={image.id}
-          className={`relative aspect-square cursor-pointer group overflow-hidden rounded-lg ${
+          className={`relative cursor-pointer group overflow-hidden rounded-lg ${
             image.id === 5 ? 'bg-gray-100' : ''
+          } ${
+            image.wide 
+              ? 'col-span-2 aspect-[2/1] md:col-span-2 md:aspect-[3/1]' 
+              : 'aspect-square'
           }`}
           onClick={() => setSelectedImage(image)}
         >
@@ -80,7 +90,7 @@ export function GalleryGrid() {
             alt={image.alt}
             fill
             className={`transition-transform duration-300 group-hover:scale-105 ${
-              image.id === 5 ? 'object-contain' : 'object-cover'
+              image.id === 5 || image.wide ? 'object-contain' : 'object-cover'
             }`}
           />
           <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />

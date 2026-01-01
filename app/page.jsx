@@ -115,20 +115,20 @@ export default function HomePage() {
       </section>
 
       {/* $10 Off Review Promotion Banner */}
-      <section className="bg-gradient-to-r from-tomRed to-accentRed py-4">
+      <section className="bg-gradient-to-r from-tomRed to-accentRed py-3 sm:py-4">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-center text-center md:text-left space-y-2 md:space-y-0 md:space-x-4">
-            <div className="flex items-center space-x-2">
-              <span className="text-3xl">⭐</span>
-              <span className="text-white font-montserrat font-bold text-lg md:text-xl">
+          <div className="flex flex-col items-center justify-center text-center space-y-2 md:flex-row md:space-y-0 md:space-x-4">
+            <div className="flex items-center space-x-1 sm:space-x-2">
+              <span className="text-2xl sm:text-3xl">⭐</span>
+              <span className="text-white font-montserrat font-bold text-sm sm:text-lg md:text-xl">
                 Leave us a 5-Star Review & Get $10 OFF
               </span>
-              <span className="text-3xl">⭐</span>
+              <span className="text-2xl sm:text-3xl">⭐</span>
             </div>
-            <span className="text-white/90 text-sm md:text-base">
-              your next Clean & Check! <span className="text-white/70">(Limited to one per household)</span>
+            <span className="text-white/90 text-xs sm:text-sm md:text-base">
+              your next Clean & Check! <span className="text-white/70 block sm:inline">(Limited to one per household)</span>
             </span>
-            <Link href="/reviews" className="bg-white text-accentRed px-4 py-2 rounded-md font-semibold hover:bg-lightGray transition-colors text-sm">
+            <Link href="/reviews" className="bg-white text-accentRed px-3 sm:px-4 py-1.5 sm:py-2 rounded-md font-semibold hover:bg-lightGray transition-colors text-xs sm:text-sm mt-1 md:mt-0">
               Leave a Review
             </Link>
           </div>
@@ -205,55 +205,55 @@ export default function HomePage() {
       </section>
 
       {/* Award Recognition Section */}
-      <section className="section-padding bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Award Image */}
               <div className="flex justify-center lg:justify-end order-1 lg:order-1">
-                <div className="relative">
+                <div className="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[400px]">
                   <Image
                     src="/tom-torrance-heating---cooling-plaque.png"
                     alt="Tom Torrance Heating & Cooling - Top 5 Rated HVAC Contractor 2025 in Erie County, Pennsylvania"
                     width={400}
                     height={500}
-                    className="rounded-lg shadow-2xl"
+                    className="rounded-lg shadow-2xl w-full h-auto"
                   />
                 </div>
               </div>
               
               {/* Award Text */}
               <div className="text-center lg:text-left order-2 lg:order-2">
-                <div className="inline-block bg-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                <div className="inline-block bg-yellow-500/20 text-yellow-400 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold mb-4">
                   🏆 2025 Award Winner
                 </div>
-                <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-4">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-montserrat font-bold text-white mb-3 sm:mb-4">
                   Top 5 Rated HVAC Contractor
                 </h2>
-                <p className="text-xl text-gray-300 mb-4">
+                <p className="text-lg sm:text-xl text-gray-300 mb-3 sm:mb-4">
                   Erie County, Pennsylvania
                 </p>
-                <p className="text-lg text-gray-400 mb-6 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-400 mb-5 sm:mb-6 leading-relaxed">
                   We're proud to be recognized as one of the <span className="text-yellow-400 font-semibold">Top 5 HVAC Contractors</span> in 
                   Erie County based on Google Reviews. This award reflects our commitment to exceptional service and 
                   customer satisfaction.
                 </p>
-                <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 text-center">
-                    <span className="text-2xl font-bold text-yellow-400">5.0</span>
-                    <p className="text-sm text-gray-400">Star Rating</p>
+                <div className="grid grid-cols-3 gap-2 sm:gap-4 sm:flex sm:flex-wrap sm:justify-center lg:justify-start">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg px-2 sm:px-4 py-2 sm:py-3 text-center">
+                    <span className="text-xl sm:text-2xl font-bold text-yellow-400">5.0</span>
+                    <p className="text-xs sm:text-sm text-gray-400">Star Rating</p>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 text-center">
-                    <span className="text-2xl font-bold text-white">Top 5</span>
-                    <p className="text-sm text-gray-400">in Erie County</p>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg px-2 sm:px-4 py-2 sm:py-3 text-center">
+                    <span className="text-xl sm:text-2xl font-bold text-white">Top 5</span>
+                    <p className="text-xs sm:text-sm text-gray-400">in Erie County</p>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 text-center">
-                    <span className="text-2xl font-bold text-white">40+</span>
-                    <p className="text-sm text-gray-400">Years Experience</p>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg px-2 sm:px-4 py-2 sm:py-3 text-center">
+                    <span className="text-xl sm:text-2xl font-bold text-white">40+</span>
+                    <p className="text-xs sm:text-sm text-gray-400">Years Experience</p>
                   </div>
                 </div>
-                <div className="mt-8">
-                  <Link href="/reviews" className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 px-6 py-3 rounded-md font-semibold transition-colors inline-flex items-center">
+                <div className="mt-6 sm:mt-8">
+                  <Link href="/reviews" className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 px-5 sm:px-6 py-2.5 sm:py-3 rounded-md font-semibold transition-colors inline-flex items-center text-sm sm:text-base">
                     See Our Reviews
                     <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
