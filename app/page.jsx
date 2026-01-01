@@ -204,6 +204,68 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Award Recognition Section */}
+      <section className="section-padding bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              {/* Award Image */}
+              <div className="flex justify-center lg:justify-end order-1 lg:order-1">
+                <div className="relative">
+                  <Image
+                    src="/tom-torrance-heating---cooling-plaque.png"
+                    alt="Tom Torrance Heating & Cooling - Top 5 Rated HVAC Contractor 2025 in Erie County, Pennsylvania"
+                    width={400}
+                    height={500}
+                    className="rounded-lg shadow-2xl"
+                  />
+                </div>
+              </div>
+              
+              {/* Award Text */}
+              <div className="text-center lg:text-left order-2 lg:order-2">
+                <div className="inline-block bg-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  🏆 2025 Award Winner
+                </div>
+                <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-4">
+                  Top 5 Rated HVAC Contractor
+                </h2>
+                <p className="text-xl text-gray-300 mb-4">
+                  Erie County, Pennsylvania
+                </p>
+                <p className="text-lg text-gray-400 mb-6 leading-relaxed">
+                  We're proud to be recognized as one of the <span className="text-yellow-400 font-semibold">Top 5 HVAC Contractors</span> in 
+                  Erie County based on Google Reviews. This award reflects our commitment to exceptional service and 
+                  customer satisfaction.
+                </p>
+                <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 text-center">
+                    <span className="text-2xl font-bold text-yellow-400">5.0</span>
+                    <p className="text-sm text-gray-400">Star Rating</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 text-center">
+                    <span className="text-2xl font-bold text-white">Top 5</span>
+                    <p className="text-sm text-gray-400">in Erie County</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 text-center">
+                    <span className="text-2xl font-bold text-white">40+</span>
+                    <p className="text-sm text-gray-400">Years Experience</p>
+                  </div>
+                </div>
+                <div className="mt-8">
+                  <Link href="/reviews" className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 px-6 py-3 rounded-md font-semibold transition-colors inline-flex items-center">
+                    See Our Reviews
+                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Seasonal Clean & Check Promotions */}
       <section className="section-padding bg-gradient-to-br from-darkNavy to-torranceBlue text-white">
         <div className="container mx-auto px-4">
