@@ -3,11 +3,15 @@ import { Droplets, CheckCircle, Phone } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Traditional Water Heaters | Tom Torrance Heating & Cooling',
-  description: 'Reliable traditional tank water heater installation and service in Erie County, PA. Gas and electric models with proven technology and affordable pricing.',
+  title: 'Traditional Water Heaters Erie PA | Tank Water Heater Service',
+  description: 'Traditional tank water heater installation & service in Erie County PA. Gas & electric models. Affordable pricing, proven reliability. Call (814) 825-7066!',
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/water-heater-services/traditional',
+  },
   openGraph: {
-    title: 'Traditional Water Heaters | Tom Torrance Heating & Cooling',
-    description: 'Reliable traditional tank water heater installation and service in Erie County, PA. Gas and electric models with proven technology and affordable pricing.',
+    title: 'Traditional Water Heaters | Tom Torrance Erie PA',
+    description: 'Reliable tank water heater installation & service in Erie County PA. Gas & electric models.',
+    url: 'https://tomtorranceheatingcooling.com/water-heater-services/traditional',
     type: 'website',
   },
 }
@@ -32,11 +36,11 @@ export default function TraditionalWaterHeatersPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:814-885-2440"
+                href="tel:814-825-7066"
                 className="bg-tomRed hover:bg-accentRed text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call (814) 885-2440
+                Call (814) 825-7066
               </a>
               <Link 
                 href="/contact-us"
@@ -286,7 +290,7 @@ export default function TraditionalWaterHeatersPage() {
             className="bg-white text-tomRed hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center"
           >
             <Phone className="mr-2 h-5 w-5" />
-            Call for Quote: (814) 885-2440
+            Call for Quote: (814) 825-7066
           </a>
         </div>
       </section>

@@ -4,11 +4,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Air Conditioning Installation & Repair | Tom Torrance Heating & Cooling',
-  description: 'Expert AC installation, repair, and maintenance services in Erie County, PA. Energy-efficient systems and preventive maintenance.',
+  title: 'AC Installation & Repair Erie PA | Air Conditioning Service',
+  description: 'Expert AC installation & repair in Erie County PA. Energy-efficient air conditioning systems. Same-day service available. Call (814) 825-7066 for free estimates!',
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/hvac-services/air-conditioning',
+  },
   openGraph: {
-    title: 'Air Conditioning Installation & Repair | Tom Torrance Heating & Cooling',
-    description: 'Expert AC installation, repair, and maintenance services in Erie County, PA. Energy-efficient systems and preventive maintenance.',
+    title: 'AC Installation & Repair | Tom Torrance Erie PA',
+    description: 'Expert AC installation, repair & maintenance in Erie County PA. Energy-efficient cooling systems.',
+    url: 'https://tomtorranceheatingcooling.com/hvac-services/air-conditioning',
     type: 'website',
   },
 }

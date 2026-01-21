@@ -1,36 +1,39 @@
 export async function GET() {
-  const baseUrl = 'https://tomtorranceheatingandcooling.com'
+  const baseUrl = 'https://tomtorranceheatingcooling.com'
   
+  // All routes with SEO priority and change frequency
   const routes = [
-    '',
-    '/about-us',
-    '/hvac-services',
-    '/hvac-services/air-conditioning',
-    '/hvac-services/furnace-installation-repair',
-    '/hvac-services/ductwork',
-    '/hvac-services/air-purification',
-    '/water-heater-services',
-    '/water-heater-services/installation',
-    '/water-heater-services/repair',
-    '/water-heater-services/tankless',
-    '/water-heater-services/traditional',
-    '/service-areas',
-    '/reviews',
-    '/contact-us'
+    { path: '', priority: '1.0', changefreq: 'weekly' },
+    { path: '/about-us', priority: '0.9', changefreq: 'monthly' },
+    { path: '/contact-us', priority: '0.9', changefreq: 'monthly' },
+    { path: '/hvac-services', priority: '0.9', changefreq: 'weekly' },
+    { path: '/hvac-services/air-conditioning', priority: '0.8', changefreq: 'monthly' },
+    { path: '/hvac-services/furnace-installation-repair', priority: '0.8', changefreq: 'monthly' },
+    { path: '/hvac-services/ductwork', priority: '0.8', changefreq: 'monthly' },
+    { path: '/hvac-services/air-purification', priority: '0.8', changefreq: 'monthly' },
+    { path: '/water-heater-services', priority: '0.9', changefreq: 'weekly' },
+    { path: '/water-heater-services/installation', priority: '0.8', changefreq: 'monthly' },
+    { path: '/water-heater-services/repair', priority: '0.8', changefreq: 'monthly' },
+    { path: '/water-heater-services/tankless', priority: '0.8', changefreq: 'monthly' },
+    { path: '/water-heater-services/traditional', priority: '0.8', changefreq: 'monthly' },
+    { path: '/service-areas', priority: '0.9', changefreq: 'monthly' },
+    { path: '/reviews', priority: '0.8', changefreq: 'weekly' },
   ]
 
+  const currentDate = new Date().toISOString().split('T')[0]
+
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 ${routes
-  .map((route) => {
-    const priority = route === '' ? '1.0' : route.includes('/hvac-services/') || route.includes('/water-heater-services/') ? '0.8' : '0.9'
-    return `  <url>
-    <loc>${baseUrl}${route}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>${priority}</priority>
-  </url>`
-  })
+  .map((route) => `  <url>
+    <loc>${baseUrl}${route.path}</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>${route.changefreq}</changefreq>
+    <priority>${route.priority}</priority>
+  </url>`)
   .join('\n')}
 </urlset>`
 
@@ -38,6 +41,7 @@ ${routes
     status: 200,
     headers: {
       'Content-Type': 'application/xml',
+      'Cache-Control': 'public, max-age=86400, s-maxage=86400',
     },
   })
 } 

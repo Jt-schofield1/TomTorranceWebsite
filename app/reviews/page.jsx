@@ -3,12 +3,15 @@ import { Star, User } from 'lucide-react'
 import ReviewForm from './ReviewForm'
 
 export const metadata = {
-  title: 'Reviews - Tom Torrance Heating & Cooling',
-  description: 'Read customer reviews and testimonials for Tom Torrance Heating & Cooling. See why we\'re Erie County\'s most trusted HVAC provider.',
+  title: 'Customer Reviews | 5-Star Rated HVAC Company Erie PA',
+  description: 'See why Tom Torrance Heating & Cooling is Erie County\'s top-rated HVAC company. Read 5-star customer reviews. Get $10 off for leaving a review!',
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/reviews',
+  },
   openGraph: {
-    title: 'Reviews - Tom Torrance Heating & Cooling',
-    description: 'Read customer reviews and testimonials for Tom Torrance Heating & Cooling. See why we\'re Erie County\'s most trusted HVAC provider.',
-    url: 'https://tomtorranceheatingandcooling.com/reviews',
+    title: 'Customer Reviews | Tom Torrance Heating & Cooling',
+    description: '5-star rated HVAC company in Erie PA. Read customer testimonials and see why we\'re Erie County\'s most trusted HVAC provider.',
+    url: 'https://tomtorranceheatingcooling.com/reviews',
   },
 }
 

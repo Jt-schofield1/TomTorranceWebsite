@@ -3,11 +3,15 @@ import { Settings, CheckCircle, Phone } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Water Heater Installation | Tom Torrance Heating & Cooling',
-  description: 'Professional water heater installation in Erie County, PA. Tank and tankless water heaters with expert sizing and code-compliant installation.',
+  title: 'Water Heater Installation Erie PA | Tank & Tankless',
+  description: 'Professional water heater installation in Erie County PA. Tank & tankless options. Code-compliant installation with warranty. Call (814) 825-7066 for free estimates!',
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/water-heater-services/installation',
+  },
   openGraph: {
-    title: 'Water Heater Installation | Tom Torrance Heating & Cooling',
-    description: 'Professional water heater installation in Erie County, PA. Tank and tankless water heaters with expert sizing and code-compliant installation.',
+    title: 'Water Heater Installation | Tom Torrance Erie PA',
+    description: 'Professional water heater installation in Erie County PA. Tank & tankless options with expert sizing.',
+    url: 'https://tomtorranceheatingcooling.com/water-heater-services/installation',
     type: 'website',
   },
 }

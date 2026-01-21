@@ -3,12 +3,15 @@ import ContactForm from '../../components/ContactForm'
 import { aboutUsContent, homePageContent, siteConfig } from '../../lib/content'
 
 export const metadata = {
-  title: 'About Us - Tom Torrance Heating & Cooling',
-  description: aboutUsContent.description.slice(0, 160),
+  title: 'About Us | Family & Veteran Owned HVAC Company Erie PA',
+  description: 'Meet Tom Torrance Heating & Cooling - Erie County\'s trusted family & veteran owned HVAC company since 1985. 40+ years of honest, reliable service. Licensed PA066651.',
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/about-us',
+  },
   openGraph: {
-    title: 'About Us - Tom Torrance Heating & Cooling',
-    description: aboutUsContent.description.slice(0, 160),
-    url: 'https://tomtorranceheatingandcooling.com/about-us',
+    title: 'About Tom Torrance Heating & Cooling | Erie PA',
+    description: 'Family & veteran owned HVAC company serving Erie County since 1985. 40+ years of trusted service.',
+    url: 'https://tomtorranceheatingcooling.com/about-us',
   },
 }
 

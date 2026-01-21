@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Script from 'next/script'
 import ContactForm from '../components/ContactForm'
 import { ServiceCardsGrid } from '../components/ServiceCard'
 import { TestimonialsSection } from '../components/TestimonialCarousel'
@@ -7,13 +8,58 @@ import { GallerySection } from '../components/GalleryGrid'
 import { homePageContent, testimonials, siteConfig } from '../lib/content'
 
 export const metadata = {
-  title: 'Home - Tom Torrance Heating & Cooling',
-  description: homePageContent.intro.description.slice(0, 160),
-  openGraph: {
-    title: 'Tom Torrance Heating & Cooling',
-    description: homePageContent.intro.description.slice(0, 160),
-    url: 'https://tomtorranceheatingandcooling.com',
+  title: 'HVAC Erie PA | #1 Heating & Cooling Company | (814) 825-7066',
+  description: 'Looking for HVAC in Erie PA? Tom Torrance is Erie\'s #1 rated heating & cooling company with 40+ years experience. Furnace repair, AC installation, water heaters. Call (814) 825-7066!',
+  keywords: ['HVAC Erie PA', 'HVAC Erie', 'heating and cooling Erie PA', 'furnace repair Erie', 'AC repair Erie PA', 'heating company Erie'],
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com',
   },
+  openGraph: {
+    title: 'HVAC Erie PA | Tom Torrance Heating & Cooling',
+    description: '#1 HVAC company in Erie PA. 40+ years experience. Furnace repair, AC installation, water heaters. Call (814) 825-7066!',
+    url: 'https://tomtorranceheatingcooling.com',
+    images: [{ url: '/home-hero.jpg', width: 1200, height: 630, alt: 'HVAC Erie PA - Tom Torrance Heating & Cooling' }],
+  },
+}
+
+// FAQ Schema for Google Rich Snippets
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What HVAC services do you offer in Erie PA?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Tom Torrance Heating & Cooling provides complete HVAC services in Erie PA including furnace installation and repair, air conditioning installation and repair, ductwork services, air purification systems, and water heater services. We serve all of Erie County including Erie, Waterford, Edinboro, Fairview, and surrounding areas.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'How much does HVAC repair cost in Erie PA?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'HVAC repair costs in Erie PA vary depending on the issue and equipment type. We provide free estimates and upfront pricing before any work begins. Call us at (814) 825-7066 for a free assessment of your heating or cooling system.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you offer emergency HVAC service in Erie?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, we offer emergency HVAC services during our business hours (7 AM - 7:30 PM, Monday through Saturday). If your furnace breaks down in winter or AC fails in summer, call (814) 825-7066 for prompt service throughout Erie County.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Why choose Tom Torrance for HVAC in Erie PA?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Tom Torrance Heating & Cooling is Erie\'s trusted HVAC company with over 40 years of experience. We\'re family and veteran owned, fully licensed (PA066651), and have a 5-star rating. We offer honest pricing, quality workmanship, and personalized service to every Erie County customer.'
+      }
+    }
+  ]
 }
 
 export default function HomePage() {
@@ -62,6 +108,13 @@ export default function HomePage() {
   ]
 
   return (
+    <>
+      {/* FAQ Schema for Rich Snippets */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-darkNavy to-torranceBlue text-white pt-24 pb-12 md:pt-20 md:pb-16 lg:pt-0 lg:pb-0">
@@ -478,6 +531,64 @@ export default function HomePage() {
       {/* Gallery Section */}
       <GallerySection />
 
+      {/* FAQ Section - Helps with Google Featured Snippets */}
+      <section className="section-padding bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-center mb-4">
+              Frequently Asked Questions About HVAC in Erie PA
+            </h2>
+            <p className="text-lg text-darkGray text-center mb-12">
+              Common questions from Erie County homeowners about heating and cooling services
+            </p>
+            
+            <div className="space-y-6">
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-montserrat font-semibold text-darkGray mb-3">
+                  What HVAC services do you offer in Erie PA?
+                </h3>
+                <p className="text-darkGray leading-relaxed">
+                  Tom Torrance Heating & Cooling provides complete HVAC services in Erie PA including furnace installation and repair, 
+                  air conditioning installation and repair, ductwork services, air purification systems, and water heater services. 
+                  We serve all of Erie County including Erie, Waterford, Edinboro, Fairview, and surrounding areas.
+                </p>
+              </div>
+              
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-montserrat font-semibold text-darkGray mb-3">
+                  How much does HVAC repair cost in Erie PA?
+                </h3>
+                <p className="text-darkGray leading-relaxed">
+                  HVAC repair costs in Erie PA vary depending on the issue and equipment type. We provide free estimates and upfront pricing 
+                  before any work begins. Call us at (814) 825-7066 for a free assessment of your heating or cooling system.
+                </p>
+              </div>
+              
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-montserrat font-semibold text-darkGray mb-3">
+                  Do you offer emergency HVAC service in Erie?
+                </h3>
+                <p className="text-darkGray leading-relaxed">
+                  Yes, we offer emergency HVAC services during our business hours (7 AM - 7:30 PM, Monday through Saturday). 
+                  If your furnace breaks down in winter or AC fails in summer, call (814) 825-7066 for prompt service throughout Erie County.
+                </p>
+              </div>
+              
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-montserrat font-semibold text-darkGray mb-3">
+                  Why choose Tom Torrance for HVAC in Erie PA?
+                </h3>
+                <p className="text-darkGray leading-relaxed">
+                  Tom Torrance Heating & Cooling is Erie's trusted HVAC company with over 40 years of experience. We're family and veteran owned, 
+                  fully licensed (PA066651), and have a 5-star rating. We offer honest pricing, quality workmanship, and personalized service 
+                  to every Erie County customer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="section-padding bg-accentRed text-white">
         <div className="container mx-auto px-4 text-center">
@@ -498,5 +609,6 @@ export default function HomePage() {
         </div>
       </section>
     </div>
+    </>
   )
 } 

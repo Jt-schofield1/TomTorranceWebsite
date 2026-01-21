@@ -3,12 +3,15 @@ import { testimonials, siteConfig, businessHours } from '../../lib/content'
 import { Phone, MapPin, Clock } from 'lucide-react'
 
 export const metadata = {
-  title: 'Contact Us - Tom Torrance Heating & Cooling',
-  description: 'Contact Tom Torrance Heating & Cooling for reliable HVAC services in Erie County. Call (814) 885-2440 or schedule online for free estimates.',
+  title: 'Contact Us | Schedule HVAC Service Erie PA | (814) 825-7066',
+  description: 'Contact Tom Torrance Heating & Cooling for fast HVAC service in Erie County. Free estimates! Call (814) 825-7066 or schedule online. 707 Moore Rd, Waterford PA.',
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/contact-us',
+  },
   openGraph: {
-    title: 'Contact Us - Tom Torrance Heating & Cooling',
-    description: 'Contact Tom Torrance Heating & Cooling for reliable HVAC services in Erie County. Call (814) 885-2440 or schedule online for free estimates.',
-    url: 'https://tomtorranceheatingandcooling.com/contact-us',
+    title: 'Contact Tom Torrance Heating & Cooling | Erie PA',
+    description: 'Schedule HVAC service in Erie County. Free estimates! Call (814) 825-7066.',
+    url: 'https://tomtorranceheatingcooling.com/contact-us',
   },
 }
 

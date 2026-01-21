@@ -4,11 +4,16 @@ import { Thermometer, Wind, Wrench, Shield } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'HVAC Services | Tom Torrance Heating & Cooling',
-  description: 'Professional HVAC services in Erie County, PA. Air conditioning, furnace installation & repair, ductwork, and air purification systems.',
+  title: 'HVAC Services Erie PA | Heating & AC Repair | (814) 825-7066',
+  description: 'Professional HVAC services in Erie PA. Furnace repair, AC installation & repair, ductwork, air purification. 40+ years serving Erie County. Call (814) 825-7066 for free estimates!',
+  keywords: ['HVAC services Erie PA', 'HVAC Erie', 'heating services Erie PA', 'AC services Erie PA', 'HVAC contractor Erie County'],
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/hvac-services',
+  },
   openGraph: {
-    title: 'HVAC Services | Tom Torrance Heating & Cooling',
-    description: 'Professional HVAC services in Erie County, PA. Air conditioning, furnace installation & repair, ductwork, and air purification systems.',
+    title: 'HVAC Services Erie PA | Tom Torrance Heating & Cooling',
+    description: 'Professional HVAC services in Erie PA. Furnace repair, AC installation, ductwork. 40+ years experience.',
+    url: 'https://tomtorranceheatingcooling.com/hvac-services',
     type: 'website',
   },
 }

@@ -3,11 +3,15 @@ import { Shield, CheckCircle, Phone } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Air Purification Systems | Tom Torrance Heating & Cooling',
-  description: 'Advanced air purification solutions in Erie County, PA. Improve indoor air quality with whole-home air purifiers, UV lights, and HEPA systems.',
+  title: 'Air Purification Systems Erie PA | REME HALO & HEPA Filters',
+  description: 'Air purification systems in Erie County PA. REME HALO, UV lights, HEPA filters for cleaner indoor air. Reduce allergens & improve air quality. Call (814) 825-7066!',
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/hvac-services/air-purification',
+  },
   openGraph: {
-    title: 'Air Purification Systems | Tom Torrance Heating & Cooling',
-    description: 'Advanced air purification solutions in Erie County, PA. Improve indoor air quality with whole-home air purifiers, UV lights, and HEPA systems.',
+    title: 'Air Purification Systems | Tom Torrance Erie PA',
+    description: 'Advanced air purification in Erie County PA. REME HALO, UV lights, HEPA systems for healthier indoor air.',
+    url: 'https://tomtorranceheatingcooling.com/hvac-services/air-purification',
     type: 'website',
   },
 }
@@ -32,11 +36,11 @@ export default function AirPurificationPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:814-885-2440"
+                href="tel:814-825-7066"
                 className="bg-tomRed hover:bg-accentRed text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call (814) 885-2440
+                Call (814) 825-7066
               </a>
               <Link 
                 href="/contact-us"
@@ -190,11 +194,11 @@ export default function AirPurificationPage() {
             Breathe easier with professional air purification systems installed by our experts
           </p>
           <a 
-            href="tel:814-885-2440"
+            href="tel:814-825-7066"
             className="bg-white text-tomRed hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center"
           >
             <Phone className="mr-2 h-5 w-5" />
-            Call for Clean Air: (814) 885-2440
+            Call for Clean Air: (814) 825-7066
           </a>
         </div>
       </section>

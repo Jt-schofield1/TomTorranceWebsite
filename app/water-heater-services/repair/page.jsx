@@ -3,11 +3,15 @@ import { Wrench, CheckCircle, Phone } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Water Heater Repair | Tom Torrance Heating & Cooling',
-  description: 'Fast water heater repair services in Erie County, PA. Professional diagnostics and same-day service to restore hot water quickly.',
+  title: 'Water Heater Repair Erie PA | Fast Same-Day Service',
+  description: 'Fast water heater repair in Erie County PA. No hot water? Same-day service available! Professional diagnostics. Call (814) 825-7066 for emergency repair!',
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/water-heater-services/repair',
+  },
   openGraph: {
-    title: 'Water Heater Repair | Tom Torrance Heating & Cooling',
-    description: 'Fast water heater repair services in Erie County, PA. Professional diagnostics and same-day service to restore hot water quickly.',
+    title: 'Water Heater Repair | Tom Torrance Erie PA',
+    description: 'Fast water heater repair in Erie County PA. Same-day service to restore hot water quickly.',
+    url: 'https://tomtorranceheatingcooling.com/water-heater-services/repair',
     type: 'website',
   },
 }
@@ -36,7 +40,7 @@ export default function WaterHeaterRepairPage() {
                 className="bg-tomRed hover:bg-accentRed text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call for Repair: (814) 885-2440
+                Call for Repair: (814) 825-7066
               </a>
               <Link 
                 href="/contact-us"
@@ -182,7 +186,7 @@ export default function WaterHeaterRepairPage() {
             className="bg-white text-tomRed hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center"
           >
             <Phone className="mr-2 h-5 w-5" />
-            Call for Repair: (814) 885-2440
+            Call for Repair: (814) 825-7066
           </a>
         </div>
       </section>

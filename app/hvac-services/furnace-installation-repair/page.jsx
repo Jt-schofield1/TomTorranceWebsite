@@ -3,11 +3,15 @@ import { Wind, CheckCircle, Phone } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Furnace Installation & Repair | Tom Torrance Heating & Cooling',
-  description: 'Professional furnace installation and repair services in Erie County, PA. High-efficiency heating systems and maintenance.',
+  title: 'Furnace Installation & Repair Erie PA | Heating Service',
+  description: 'Professional furnace installation & repair in Erie County PA. High-efficiency heating systems. Emergency service available. Call (814) 825-7066 for fast furnace repair!',
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/hvac-services/furnace-installation-repair',
+  },
   openGraph: {
-    title: 'Furnace Installation & Repair | Tom Torrance Heating & Cooling',
-    description: 'Professional furnace installation and repair services in Erie County, PA. High-efficiency heating systems and maintenance.',
+    title: 'Furnace Installation & Repair | Tom Torrance Erie PA',
+    description: 'Professional furnace installation & repair in Erie County PA. High-efficiency heating systems & maintenance.',
+    url: 'https://tomtorranceheatingcooling.com/hvac-services/furnace-installation-repair',
     type: 'website',
   },
 }
@@ -32,11 +36,11 @@ export default function FurnaceInstallationRepairPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:814-885-2440"
+                href="tel:814-825-7066"
                 className="bg-tomRed hover:bg-accentRed text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call (814) 885-2440
+                Call (814) 825-7066
               </a>
               <Link 
                 href="/contact-us"
@@ -141,11 +145,11 @@ export default function FurnaceInstallationRepairPage() {
             Don't wait when your furnace breaks down. Call for professional service.
           </p>
           <a 
-            href="tel:814-885-2440"
+            href="tel:814-825-7066"
             className="bg-white text-tomRed hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center"
           >
             <Phone className="mr-2 h-5 w-5" />
-            Call Us: (814) 885-2440
+            Call Us: (814) 825-7066
           </a>
         </div>
       </section>

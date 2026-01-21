@@ -3,11 +3,15 @@ import { Wrench, CheckCircle, Phone } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Ductwork Services | Tom Torrance Heating & Cooling',
-  description: 'Professional ductwork installation, repair, and cleaning services in Erie County, PA. Improve HVAC efficiency and indoor air quality.',
+  title: 'Ductwork Installation & Repair Erie PA | Air Duct Services',
+  description: 'Professional ductwork installation, repair & cleaning in Erie County PA. Improve HVAC efficiency & air quality. Call (814) 825-7066 for duct services!',
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/hvac-services/ductwork',
+  },
   openGraph: {
-    title: 'Ductwork Services | Tom Torrance Heating & Cooling',
-    description: 'Professional ductwork installation, repair, and cleaning services in Erie County, PA. Improve HVAC efficiency and indoor air quality.',
+    title: 'Ductwork Services | Tom Torrance Erie PA',
+    description: 'Professional ductwork installation, repair & cleaning in Erie County PA. Improve efficiency & air quality.',
+    url: 'https://tomtorranceheatingcooling.com/hvac-services/ductwork',
     type: 'website',
   },
 }
@@ -32,11 +36,11 @@ export default function DuctworkPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:814-885-2440"
+                href="tel:814-825-7066"
                 className="bg-tomRed hover:bg-accentRed text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call (814) 885-2440
+                Call (814) 825-7066
               </a>
               <Link 
                 href="/contact-us"
@@ -175,11 +179,11 @@ export default function DuctworkPage() {
             Get professional ductwork services to improve your HVAC system efficiency
           </p>
           <a 
-            href="tel:814-885-2440"
+            href="tel:814-825-7066"
             className="bg-white text-tomRed hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center"
           >
             <Phone className="mr-2 h-5 w-5" />
-            Call for Service: (814) 885-2440
+            Call for Service: (814) 825-7066
           </a>
         </div>
       </section>

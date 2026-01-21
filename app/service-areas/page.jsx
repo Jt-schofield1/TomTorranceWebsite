@@ -4,12 +4,16 @@ import { serviceAreas, siteConfig, businessHours } from '../../lib/content'
 import { MapPin, Phone, Clock } from 'lucide-react'
 
 export const metadata = {
-  title: 'Service Areas - Tom Torrance Heating & Cooling',
-  description: 'Tom Torrance Heating & Cooling proudly serves Erie County and surrounding areas including Erie, Waterford, Edinboro, Fairview, Girard, and more.',
+  title: 'HVAC Service Areas Erie PA | Waterford, Edinboro, Fairview',
+  description: 'HVAC services throughout Erie PA and Erie County. Serving Erie, Waterford, Edinboro, Fairview, Girard, Harborcreek, North East, Millcreek. Call (814) 825-7066 for local service!',
+  keywords: ['HVAC Erie PA', 'HVAC Waterford PA', 'HVAC Edinboro PA', 'heating Fairview PA', 'AC repair Harborcreek', 'furnace repair Erie County'],
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/service-areas',
+  },
   openGraph: {
-    title: 'Service Areas - Tom Torrance Heating & Cooling',
-    description: 'Tom Torrance Heating & Cooling proudly serves Erie County and surrounding areas including Erie, Waterford, Edinboro, Fairview, Girard, and more.',
-    url: 'https://tomtorranceheatingandcooling.com/service-areas',
+    title: 'HVAC Service Areas | Erie PA & Erie County',
+    description: 'Local HVAC services in Erie PA, Waterford, Edinboro, Fairview, Girard, Harborcreek & all Erie County.',
+    url: 'https://tomtorranceheatingcooling.com/service-areas',
   },
 }
 

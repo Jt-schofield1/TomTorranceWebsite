@@ -3,11 +3,15 @@ import { Droplets, Wrench, Zap, Settings } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Water Heater Services | Tom Torrance Heating & Cooling',
-  description: 'Expert water heater installation, repair, and maintenance in Erie County, PA. Tankless and traditional water heaters with professional service.',
+  title: 'Water Heater Services Erie PA | Installation & Repair',
+  description: 'Water heater installation & repair in Erie County PA. Tankless & traditional water heaters. Same-day service available. Call (814) 825-7066 for hot water solutions!',
+  alternates: {
+    canonical: 'https://tomtorranceheatingcooling.com/water-heater-services',
+  },
   openGraph: {
-    title: 'Water Heater Services | Tom Torrance Heating & Cooling',
-    description: 'Expert water heater installation, repair, and maintenance in Erie County, PA. Tankless and traditional water heaters with professional service.',
+    title: 'Water Heater Services | Tom Torrance Erie PA',
+    description: 'Expert water heater installation, repair & maintenance in Erie County PA. Tankless & traditional options.',
+    url: 'https://tomtorranceheatingcooling.com/water-heater-services',
     type: 'website',
   },
 }
