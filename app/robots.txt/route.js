@@ -22,10 +22,35 @@ User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
 
-# Bing specific  
+# Bing specific
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1`
+Crawl-delay: 1
+
+# AI/LLM Crawlers - Allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /`
 
   return new Response(robotsTxt, {
     status: 200,
@@ -34,4 +59,4 @@ Crawl-delay: 1`
       'Cache-Control': 'public, max-age=86400',
     },
   })
-} 
+}

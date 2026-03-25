@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import ContactForm from '../../components/ContactForm'
 import { aboutUsContent, homePageContent, siteConfig } from '../../lib/content'
+import { generateBreadcrumbSchema, generateWebPageSchema } from '../../lib/schema'
 
 export const metadata = {
   title: 'About Us | Family & Veteran Owned HVAC Company Erie PA',
@@ -12,12 +13,32 @@ export const metadata = {
     title: 'About Tom Torrance Heating & Cooling | Erie PA',
     description: 'Family & veteran owned HVAC company serving Erie County since 1985. 40+ years of trusted service.',
     url: 'https://tomtorranceheatingcooling.com/about-us',
+    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'About Tom Torrance Heating & Cooling - Erie PA' }],
   },
 }
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'About Us' },
+])
+
+const webPageSchema = generateWebPageSchema({
+  name: 'About Us - Tom Torrance Heating & Cooling',
+  description: 'Meet Tom Torrance Heating & Cooling - Erie County\'s trusted family & veteran owned HVAC company since 1985.',
+  url: '/about-us',
+})
 
 export default function AboutUsPage() {
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema).replace(/</g, '\\u003c') }}
+      />
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-r from-darkNavy to-torranceBlue text-white">
         <div className="container mx-auto px-4 text-center">

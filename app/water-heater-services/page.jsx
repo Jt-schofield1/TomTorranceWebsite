@@ -1,6 +1,7 @@
 import { waterHeaterServicesContent, siteConfig } from '@/lib/content'
 import { Droplets, Wrench, Zap, Settings } from 'lucide-react'
 import Link from 'next/link'
+import { generateBreadcrumbSchema, generateServiceSchema } from '@/lib/schema'
 
 export const metadata = {
   title: 'Water Heater Services Erie PA | Installation & Repair',
@@ -13,8 +14,20 @@ export const metadata = {
     description: 'Expert water heater installation, repair & maintenance in Erie County PA. Tankless & traditional options.',
     url: 'https://tomtorranceheatingcooling.com/water-heater-services',
     type: 'website',
+    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Water Heater Services Erie PA' }],
   },
 }
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Water Heater Services' },
+])
+
+const serviceSchema = generateServiceSchema({
+  name: 'Water Heater Services',
+  description: 'Expert water heater installation, repair, and maintenance for tankless and traditional systems in Erie County PA.',
+  url: '/water-heater-services',
+})
 
 const serviceIcons = {
   'installation': Settings,
@@ -28,6 +41,8 @@ export default function WaterHeaterServicesPage() {
 
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema).replace(/</g, '\\u003c') }} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-torranceBlue to-torranceBlue/80 text-white py-16 lg:py-24">
         <div className="container mx-auto px-4">

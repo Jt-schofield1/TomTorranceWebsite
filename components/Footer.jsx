@@ -86,19 +86,21 @@ export default function Footer() {
             <h3 className="text-lg font-montserrat font-semibold mb-4">Follow Us</h3>
             <div className="space-y-3">
               <a 
-                href="#" 
+                href="https://www.yelp.com/biz/tom-torrance-heating-and-cooling-and-refrigeration-waterford-3" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-white hover:text-accentRed transition-colors"
+                aria-label="Visit Tom Torrance Heating & Cooling on Yelp"
               >
                 <ExternalLink className="w-5 h-5" />
                 <span>Yelp</span>
               </a>
               <a 
-                href="#" 
+                href="https://www.google.com/search?q=Tom+Torrance+Heating+%26+Cooling+reviews" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-white hover:text-accentRed transition-colors"
+                aria-label="Visit Tom Torrance Heating & Cooling on Google Business"
               >
                 <ExternalLink className="w-5 h-5" />
                 <span>Google Business Profile</span>
@@ -124,10 +126,10 @@ export default function Footer() {
         <div className="border-t border-gray-600 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-300">
-              © 2025 All Rights Reserved.
+              © {new Date().getFullYear()} Tom Torrance Heating & Cooling. All Rights Reserved.
             </p>
             <p className="text-sm text-gray-300">
-              Built by <a href= "https://www.jamesschofield.com" className="text-white hover:text-accentRed transition-colors">James Schofield</a>
+              Built by <a href="https://www.jamesschofield.com" className="text-white hover:text-accentRed transition-colors">James Schofield</a>
             </p>
             
           </div>

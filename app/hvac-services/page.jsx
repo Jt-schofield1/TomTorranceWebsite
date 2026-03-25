@@ -2,6 +2,7 @@ import { hvacServicesContent, siteConfig } from '@/lib/content'
 import ServiceCard from '@/components/ServiceCard'
 import { Thermometer, Wind, Wrench, Shield } from 'lucide-react'
 import Link from 'next/link'
+import { generateBreadcrumbSchema, generateServiceSchema } from '@/lib/schema'
 
 export const metadata = {
   title: 'HVAC Services Erie PA | Heating & AC Repair | (814) 825-7066',
@@ -15,8 +16,20 @@ export const metadata = {
     description: 'Professional HVAC services in Erie PA. Furnace repair, AC installation, ductwork. 40+ years experience.',
     url: 'https://tomtorranceheatingcooling.com/hvac-services',
     type: 'website',
+    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'HVAC Services Erie PA' }],
   },
 }
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'HVAC Services' },
+])
+
+const serviceSchema = generateServiceSchema({
+  name: 'HVAC Services',
+  description: 'Professional heating, ventilation, and air conditioning services including furnace repair, AC installation, ductwork, and air purification in Erie County PA.',
+  url: '/hvac-services',
+})
 
 const serviceIcons = {
   'air-conditioning': Thermometer,
@@ -30,6 +43,14 @@ export default function HVACServicesPage() {
 
   return (
     <main className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema).replace(/</g, '\\u003c') }}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-torranceBlue to-torranceBlue/80 text-white py-16 lg:py-24">
         <div className="container mx-auto px-4">

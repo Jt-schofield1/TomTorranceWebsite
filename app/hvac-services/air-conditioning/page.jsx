@@ -2,6 +2,7 @@ import { hvacServicesContent, siteConfig } from '@/lib/content'
 import { Thermometer, CheckCircle, Phone } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { generateBreadcrumbSchema, generateServiceSchema } from '@/lib/schema'
 
 export const metadata = {
   title: 'AC Installation & Repair Erie PA | Air Conditioning Service',
@@ -14,14 +15,29 @@ export const metadata = {
     description: 'Expert AC installation, repair & maintenance in Erie County PA. Energy-efficient cooling systems.',
     url: 'https://tomtorranceheatingcooling.com/hvac-services/air-conditioning',
     type: 'website',
+    images: [{ url: 'https://tomtorranceheatingcooling.com/acUnits.jpg', width: 1200, height: 630, alt: 'AC Installation & Repair Erie PA' }],
   },
 }
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'HVAC Services', url: '/hvac-services' },
+  { name: 'Air Conditioning' },
+])
+
+const serviceSchema = generateServiceSchema({
+  name: 'Air Conditioning Installation & Repair',
+  description: 'Expert AC installation, repair, and maintenance services in Erie County PA. Energy-efficient cooling systems for homes and businesses.',
+  url: '/hvac-services/air-conditioning',
+})
 
 export default function AirConditioningPage() {
   const service = hvacServicesContent.services.find(s => s.slug === 'air-conditioning')
 
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema).replace(/</g, '\\u003c') }} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-torranceBlue to-torranceBlue/80 text-white py-16 lg:py-20">
         <div className="container mx-auto px-4">

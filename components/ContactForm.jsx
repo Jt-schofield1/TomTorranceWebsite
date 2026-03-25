@@ -141,12 +141,12 @@ export default function ContactForm({ title = "Contact Us Today", subtitle = "We
     <>
       <div className="card max-w-lg mx-auto">
       <div className="text-center mb-3">
-        <h4 className="text-lg font-montserrat font-semibold text-darkGray mb-1">
+        <p className="text-lg font-montserrat font-semibold text-darkGray mb-1">
           {title}
-        </h4>
-        <h5 className="text-sm font-montserrat text-accentRed">
+        </p>
+        <p className="text-sm font-montserrat text-accentRed">
           {subtitle}
-        </h5>
+        </p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-2">
