@@ -109,10 +109,9 @@ export default function HomePage() {
 
   return (
     <>
-      {/* FAQ Schema for Rich Snippets */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, '\\u003c') }}
       />
       
     <div className="min-h-screen">

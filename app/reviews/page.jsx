@@ -1,6 +1,8 @@
+import Link from 'next/link'
 import { testimonials, siteConfig } from '../../lib/content'
 import { Star, User } from 'lucide-react'
 import ReviewForm from './ReviewForm'
+import { generateBreadcrumbSchema, generateReviewSchema } from '../../lib/schema'
 
 export const metadata = {
   title: 'Customer Reviews | 5-Star Rated HVAC Company Erie PA',
@@ -12,12 +14,22 @@ export const metadata = {
     title: 'Customer Reviews | Tom Torrance Heating & Cooling',
     description: '5-star rated HVAC company in Erie PA. Read customer testimonials and see why we\'re Erie County\'s most trusted HVAC provider.',
     url: 'https://tomtorranceheatingcooling.com/reviews',
+    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Customer Reviews - Tom Torrance Heating & Cooling' }],
   },
 }
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Reviews' },
+])
+
+const reviewSchemas = generateReviewSchema(testimonials.slice(0, 5))
 
 export default function ReviewsPage() {
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchemas).replace(/</g, '\\u003c') }} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-torranceBlue to-torranceBlue/80 text-white py-16 lg:py-20">
         <div className="container mx-auto px-4">
@@ -195,9 +207,9 @@ export default function ReviewsPage() {
             <a href={`tel:${siteConfig.phone}`} className="btn-primary bg-white text-accentRed hover:bg-lightGray">
               Call {siteConfig.phone}
             </a>
-            <a href="/contact-us" className="btn-secondary border-white text-white hover:bg-white hover:text-accentRed">
+            <Link href="/contact-us" className="btn-secondary border-white text-white hover:bg-white hover:text-accentRed">
               Schedule Service
-            </a>
+            </Link>
           </div>
         </div>
       </section>

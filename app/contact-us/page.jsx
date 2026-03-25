@@ -1,6 +1,8 @@
+import Link from 'next/link'
 import ContactForm from '../../components/ContactForm'
 import { testimonials, siteConfig, businessHours } from '../../lib/content'
 import { Phone, MapPin, Clock } from 'lucide-react'
+import { generateBreadcrumbSchema } from '../../lib/schema'
 
 export const metadata = {
   title: 'Contact Us | Schedule HVAC Service Erie PA | (814) 825-7066',
@@ -12,8 +14,14 @@ export const metadata = {
     title: 'Contact Tom Torrance Heating & Cooling | Erie PA',
     description: 'Schedule HVAC service in Erie County. Free estimates! Call (814) 825-7066.',
     url: 'https://tomtorranceheatingcooling.com/contact-us',
+    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Contact Tom Torrance Heating & Cooling' }],
   },
 }
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Contact Us' },
+])
 
 export default function ContactUsPage() {
   // Featured testimonials for contact page
@@ -21,6 +29,10 @@ export default function ContactUsPage() {
 
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }}
+      />
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-r from-darkNavy to-torranceBlue text-white">
         <div className="container mx-auto px-4 text-center">
@@ -188,9 +200,9 @@ export default function ContactUsPage() {
           </div>
           
           <div className="text-center mt-8">
-            <a href="/reviews" className="btn-secondary">
+            <Link href="/reviews" className="btn-secondary">
               Read More Reviews
-            </a>
+            </Link>
           </div>
         </div>
       </section>

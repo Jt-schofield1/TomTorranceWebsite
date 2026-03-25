@@ -1,6 +1,7 @@
 import { waterHeaterServicesContent } from '@/lib/content'
 import { Droplets, CheckCircle, Phone } from 'lucide-react'
 import Link from 'next/link'
+import { generateBreadcrumbSchema, generateServiceSchema } from '@/lib/schema'
 
 export const metadata = {
   title: 'Traditional Water Heaters Erie PA | Tank Water Heater Service',
@@ -13,14 +14,29 @@ export const metadata = {
     description: 'Reliable tank water heater installation & service in Erie County PA. Gas & electric models.',
     url: 'https://tomtorranceheatingcooling.com/water-heater-services/traditional',
     type: 'website',
+    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Traditional Water Heaters Erie PA' }],
   },
 }
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Water Heater Services', url: '/water-heater-services' },
+  { name: 'Traditional Water Heaters' },
+])
+
+const serviceSchema = generateServiceSchema({
+  name: 'Traditional Water Heaters',
+  description: 'Traditional tank water heater installation and service in Erie County PA. Gas and electric models with affordable pricing.',
+  url: '/water-heater-services/traditional',
+})
 
 export default function TraditionalWaterHeatersPage() {
   const service = waterHeaterServicesContent.services.find(s => s.slug === 'traditional')
 
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema).replace(/</g, '\\u003c') }} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-torranceBlue to-torranceBlue/80 text-white py-16 lg:py-20">
         <div className="container mx-auto px-4">
@@ -286,7 +302,7 @@ export default function TraditionalWaterHeatersPage() {
             Get reliable, affordable hot water with professional installation
           </p>
           <a 
-            href="tel:814-885-2440"
+            href="tel:814-825-7066"
             className="bg-white text-tomRed hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center"
           >
             <Phone className="mr-2 h-5 w-5" />

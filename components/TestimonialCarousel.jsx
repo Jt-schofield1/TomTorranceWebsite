@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
 
 export default function TestimonialCarousel({ testimonials, autoPlay = true, autoPlayDelay = 5000 }) {
@@ -60,9 +61,9 @@ export default function TestimonialCarousel({ testimonials, autoPlay = true, aut
 
         {/* Title */}
         {currentTestimonial.title && (
-          <h4 className="text-lg font-montserrat font-semibold text-darkGray mb-2">
+          <p className="text-lg font-montserrat font-semibold text-darkGray mb-2">
             {currentTestimonial.title}
-          </h4>
+          </p>
         )}
 
         {/* Author */}
@@ -127,9 +128,9 @@ export function TestimonialsSection({ testimonials, title = "Hear From Our Happy
         <TestimonialCarousel testimonials={testimonials} />
         
         <div className="text-center mt-8">
-          <a href="/reviews" className="btn-secondary">
+          <Link href="/reviews" className="btn-secondary">
             View All Reviews
-          </a>
+          </Link>
         </div>
       </div>
     </section>

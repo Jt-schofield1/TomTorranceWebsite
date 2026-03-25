@@ -1,6 +1,7 @@
 import { waterHeaterServicesContent, siteConfig } from '@/lib/content'
 import { Settings, CheckCircle, Phone } from 'lucide-react'
 import Link from 'next/link'
+import { generateBreadcrumbSchema, generateServiceSchema } from '@/lib/schema'
 
 export const metadata = {
   title: 'Water Heater Installation Erie PA | Tank & Tankless',
@@ -13,14 +14,29 @@ export const metadata = {
     description: 'Professional water heater installation in Erie County PA. Tank & tankless options with expert sizing.',
     url: 'https://tomtorranceheatingcooling.com/water-heater-services/installation',
     type: 'website',
+    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Water Heater Installation Erie PA' }],
   },
 }
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Water Heater Services', url: '/water-heater-services' },
+  { name: 'Installation' },
+])
+
+const serviceSchema = generateServiceSchema({
+  name: 'Water Heater Installation',
+  description: 'Professional water heater installation for tank and tankless systems in Erie County PA. Code-compliant with warranty coverage.',
+  url: '/water-heater-services/installation',
+})
 
 export default function WaterHeaterInstallationPage() {
   const service = waterHeaterServicesContent.services.find(s => s.slug === 'installation')
 
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema).replace(/</g, '\\u003c') }} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-torranceBlue to-torranceBlue/80 text-white py-16 lg:py-20">
         <div className="container mx-auto px-4">

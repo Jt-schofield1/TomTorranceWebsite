@@ -1,6 +1,7 @@
 import { hvacServicesContent } from '@/lib/content'
 import { Shield, CheckCircle, Phone } from 'lucide-react'
 import Link from 'next/link'
+import { generateBreadcrumbSchema, generateServiceSchema } from '@/lib/schema'
 
 export const metadata = {
   title: 'Air Purification Systems Erie PA | REME HALO & HEPA Filters',
@@ -13,14 +14,29 @@ export const metadata = {
     description: 'Advanced air purification in Erie County PA. REME HALO, UV lights, HEPA systems for healthier indoor air.',
     url: 'https://tomtorranceheatingcooling.com/hvac-services/air-purification',
     type: 'website',
+    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Air Purification Systems Erie PA' }],
   },
 }
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'HVAC Services', url: '/hvac-services' },
+  { name: 'Air Purification' },
+])
+
+const serviceSchema = generateServiceSchema({
+  name: 'Air Purification Systems',
+  description: 'Advanced air purification solutions including REME HALO, UV light sanitization, and HEPA filtration systems in Erie County PA.',
+  url: '/hvac-services/air-purification',
+})
 
 export default function AirPurificationPage() {
   const service = hvacServicesContent.services.find(s => s.slug === 'air-purification')
 
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema).replace(/</g, '\\u003c') }} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-torranceBlue to-torranceBlue/80 text-white py-16 lg:py-20">
         <div className="container mx-auto px-4">

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ContactForm from '../../components/ContactForm'
 import { serviceAreas, siteConfig, businessHours } from '../../lib/content'
 import { MapPin, Phone, Clock } from 'lucide-react'
+import { generateBreadcrumbSchema } from '../../lib/schema'
 
 export const metadata = {
   title: 'HVAC Service Areas Erie PA | Waterford, Edinboro, Fairview',
@@ -14,12 +15,19 @@ export const metadata = {
     title: 'HVAC Service Areas | Erie PA & Erie County',
     description: 'Local HVAC services in Erie PA, Waterford, Edinboro, Fairview, Girard, Harborcreek & all Erie County.',
     url: 'https://tomtorranceheatingcooling.com/service-areas',
+    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'HVAC Service Areas Erie PA' }],
   },
 }
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: '/' },
+  { name: 'Service Areas' },
+])
 
 export default function ServiceAreasPage() {
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c') }} />
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-r from-darkNavy to-torranceBlue text-white">
         <div className="container mx-auto px-4 text-center">

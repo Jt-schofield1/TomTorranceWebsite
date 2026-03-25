@@ -18,6 +18,7 @@ export async function GET() {
     { path: '/water-heater-services/traditional', priority: '0.8', changefreq: 'monthly' },
     { path: '/service-areas', priority: '0.9', changefreq: 'monthly' },
     { path: '/reviews', priority: '0.8', changefreq: 'weekly' },
+    { path: '/llms.txt', priority: '0.3', changefreq: 'monthly' },
   ]
 
   const currentDate = new Date().toISOString().split('T')[0]
