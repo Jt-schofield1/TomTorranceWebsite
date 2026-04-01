@@ -14,7 +14,6 @@ export const metadata = {
     description: 'Advanced air purification in Erie County PA. REME HALO, UV lights, HEPA systems for healthier indoor air.',
     url: 'https://tomtorranceheatingcooling.com/hvac-services/air-purification',
     type: 'website',
-    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Air Purification Systems Erie PA' }],
   },
 }
 

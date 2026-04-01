@@ -14,7 +14,6 @@ export const metadata = {
     description: 'Energy-efficient tankless water heaters in Erie County PA. Unlimited hot water, 30% energy savings.',
     url: 'https://tomtorranceheatingcooling.com/water-heater-services/tankless',
     type: 'website',
-    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Tankless Water Heaters Erie PA' }],
   },
 }
 

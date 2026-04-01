@@ -14,7 +14,6 @@ export const metadata = {
     title: 'Contact Tom Torrance Heating & Cooling | Erie PA',
     description: 'Schedule HVAC service in Erie County. Free estimates! Call (814) 825-7066.',
     url: 'https://tomtorranceheatingcooling.com/contact-us',
-    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Contact Tom Torrance Heating & Cooling' }],
   },
 }
 

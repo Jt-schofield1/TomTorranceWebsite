@@ -13,7 +13,6 @@ export const metadata = {
     title: 'About Tom Torrance Heating & Cooling | Erie PA',
     description: 'Family & veteran owned HVAC company serving Erie County since 1985. 40+ years of trusted service.',
     url: 'https://tomtorranceheatingcooling.com/about-us',
-    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'About Tom Torrance Heating & Cooling - Erie PA' }],
   },
 }
 

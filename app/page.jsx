@@ -8,17 +8,16 @@ import { GallerySection } from '../components/GalleryGrid'
 import { homePageContent, testimonials, siteConfig } from '../lib/content'
 
 export const metadata = {
-  title: 'HVAC Erie PA | #1 Heating & Cooling Company | (814) 825-7066',
-  description: 'Looking for HVAC in Erie PA? Tom Torrance is Erie\'s #1 rated heating & cooling company with 40+ years experience. Furnace repair, AC installation, water heaters. Call (814) 825-7066!',
-  keywords: ['HVAC Erie PA', 'HVAC Erie', 'heating and cooling Erie PA', 'furnace repair Erie', 'AC repair Erie PA', 'heating company Erie'],
+  title: 'Tom Torrance Heating & Cooling | #1 HVAC Erie PA | (814) 825-7066',
+  description: 'Looking for HVAC in Erie PA? Tom Torrance is Erie\'s #1 rated heating & cooling company with 40+ years experience. Furnace repair, AC installation, water heaters & ductwork. Family & veteran owned. Call (814) 825-7066!',
+  keywords: ['HVAC Erie PA', 'HVAC Erie', 'heating and cooling Erie PA', 'furnace repair Erie', 'AC repair Erie PA', 'heating company Erie', 'HVAC near me Erie PA', 'AC installation Erie PA', 'furnace installation Erie PA', 'heating repair Waterford PA'],
   alternates: {
     canonical: 'https://tomtorranceheatingcooling.com',
   },
   openGraph: {
-    title: 'HVAC Erie PA | Tom Torrance Heating & Cooling',
-    description: '#1 HVAC company in Erie PA. 40+ years experience. Furnace repair, AC installation, water heaters. Call (814) 825-7066!',
+    title: 'Tom Torrance Heating & Cooling | #1 HVAC Erie PA',
+    description: 'Erie PA\'s #1 HVAC company. 40+ years experience. Furnace repair, AC installation, water heaters. Family & veteran owned. Call (814) 825-7066!',
     url: 'https://tomtorranceheatingcooling.com',
-    images: [{ url: '/home-hero.jpg', width: 1200, height: 630, alt: 'HVAC Erie PA - Tom Torrance Heating & Cooling' }],
   },
 }
 
