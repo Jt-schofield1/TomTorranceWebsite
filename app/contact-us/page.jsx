@@ -119,6 +119,7 @@ export default function ContactUsPage() {
                     <p><span className="font-medium">Mon - Fri:</span> {businessHours.weekdays}</p>
                     <p><span className="font-medium">Saturday:</span> {businessHours.saturday}</p>
                     <p><span className="font-medium">Sunday:</span> {businessHours.sunday}</p>
+                    <p className="text-sm text-accentRed mt-2">{businessHours.afterHoursNote}</p>
                   </div>
                 </div>
               </div>
