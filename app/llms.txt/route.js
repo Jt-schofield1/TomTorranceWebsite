@@ -11,7 +11,7 @@ export async function GET() {
 - Service Area: Erie County, PA and surrounding areas
 - Founded: 1985
 - License: PA066651
-- Hours: Monday-Saturday 7:00 AM - 7:30 PM, Sunday Closed
+- Hours: Monday-Saturday 7:00 AM - 8:30 PM, Sunday Closed (after-hour rates apply to all service calls from 5:00 PM - 8:30 PM)
 - Owner: Tom Torrance (Veteran Owned)
 
 ## Core Pages
@@ -52,7 +52,7 @@ export async function GET() {
 
 - What HVAC services do you offer in Erie PA? We provide furnace installation/repair, AC installation/repair, ductwork services, air purification, and water heater services throughout Erie County.
 - How much does HVAC repair cost? Costs vary by issue and equipment. We provide free estimates and upfront pricing. Call (814) 825-7066 for assessment.
-- Do you offer emergency HVAC service? Yes, during business hours (7 AM - 7:30 PM, Monday through Saturday).
+- Do you offer emergency HVAC service? Yes, during business hours (7 AM - 8:30 PM, Monday through Saturday). After-hour rates apply to all service calls from 5:00 PM - 8:30 PM.
 - Why choose Tom Torrance? 40+ years experience, family and veteran owned, licensed PA066651, 5-star rated, honest pricing.
 `
 

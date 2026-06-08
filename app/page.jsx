@@ -48,7 +48,7 @@ const faqSchema = {
       name: 'Do you offer emergency HVAC service in Erie?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we offer emergency HVAC services during our business hours (7 AM - 7:30 PM, Monday through Saturday). If your furnace breaks down in winter or AC fails in summer, call (814) 825-7066 for prompt service throughout Erie County.'
+        text: 'Yes, we offer emergency HVAC services during our business hours (7 AM - 8:30 PM, Monday through Saturday). After-hour rates apply to all service calls from 5:00 PM - 8:30 PM. If your furnace breaks down in winter or AC fails in summer, call (814) 825-7066 for prompt service throughout Erie County.'
       }
     },
     {
@@ -568,7 +568,8 @@ export default function HomePage() {
                   Do you offer emergency HVAC service in Erie?
                 </h3>
                 <p className="text-darkGray leading-relaxed">
-                  Yes, we offer emergency HVAC services during our business hours (7 AM - 7:30 PM, Monday through Saturday). 
+                  Yes, we offer emergency HVAC services during our business hours (7 AM - 8:30 PM, Monday through Saturday).
+                  After-hour rates apply to all service calls from 5:00 PM - 8:30 PM.
                   If your furnace breaks down in winter or AC fails in summer, call (814) 825-7066 for prompt service throughout Erie County.
                 </p>
               </div>
