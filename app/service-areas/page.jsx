@@ -15,7 +15,6 @@ export const metadata = {
     title: 'HVAC Service Areas | Erie PA & Erie County',
     description: 'Local HVAC services in Erie PA, Waterford, Edinboro, Fairview, Girard, Harborcreek & all Erie County.',
     url: 'https://tomtorranceheatingcooling.com/service-areas',
-    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'HVAC Service Areas Erie PA' }],
   },
 }
 

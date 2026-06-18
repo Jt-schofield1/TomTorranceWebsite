@@ -16,7 +16,6 @@ export const metadata = {
     description: 'Professional HVAC services in Erie PA. Furnace repair, AC installation, ductwork. 40+ years experience.',
     url: 'https://tomtorranceheatingcooling.com/hvac-services',
     type: 'website',
-    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'HVAC Services Erie PA' }],
   },
 }
 

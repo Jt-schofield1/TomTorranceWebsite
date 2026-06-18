@@ -14,7 +14,6 @@ export const metadata = {
     description: 'Fast water heater repair in Erie County PA. Same-day service to restore hot water quickly.',
     url: 'https://tomtorranceheatingcooling.com/water-heater-services/repair',
     type: 'website',
-    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Water Heater Repair Erie PA' }],
   },
 }
 

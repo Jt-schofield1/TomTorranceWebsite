@@ -14,7 +14,6 @@ export const metadata = {
     description: 'Reliable tank water heater installation & service in Erie County PA. Gas & electric models.',
     url: 'https://tomtorranceheatingcooling.com/water-heater-services/traditional',
     type: 'website',
-    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Traditional Water Heaters Erie PA' }],
   },
 }
 

@@ -14,7 +14,6 @@ export const metadata = {
     title: 'Customer Reviews | Tom Torrance Heating & Cooling',
     description: '5-star rated HVAC company in Erie PA. Read customer testimonials and see why we\'re Erie County\'s most trusted HVAC provider.',
     url: 'https://tomtorranceheatingcooling.com/reviews',
-    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Customer Reviews - Tom Torrance Heating & Cooling' }],
   },
 }
 

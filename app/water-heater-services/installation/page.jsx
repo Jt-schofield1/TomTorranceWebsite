@@ -14,7 +14,6 @@ export const metadata = {
     description: 'Professional water heater installation in Erie County PA. Tank & tankless options with expert sizing.',
     url: 'https://tomtorranceheatingcooling.com/water-heater-services/installation',
     type: 'website',
-    images: [{ url: 'https://tomtorranceheatingcooling.com/home-hero.jpg', width: 1200, height: 630, alt: 'Water Heater Installation Erie PA' }],
   },
 }
 
